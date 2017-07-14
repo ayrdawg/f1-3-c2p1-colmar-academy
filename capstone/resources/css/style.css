@@ -1,0 +1,537 @@
+html{
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+}
+body{
+font-family: times;
+font-weight: bold;
+}
+
+/* header */
+@media only screen and (max-width: 480px){
+#desktop
+  {display: none;}
+.logocontainer img
+  {display: none;}
+.logoA
+  {display: none;}
+.logoC
+  {display: none;}
+#mobile
+  {width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;}
+}
+@media only screen and (min-width: 480px){
+#mobile
+  {display: none;}
+}
+header{
+  width: 100%;
+  display: flex;
+  height: 64px;
+}
+.logocontainer{
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+nav{
+  font-size: 25px;
+  color: #2f3133;
+  margin-right: 24px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logoC{
+  font-size: 25px;
+}
+.logocontainer img{
+  height: 3rem;
+  width: 3rem;
+}
+.logoA{
+  color: darkgrey;
+  font-size: 25px;
+}
+.box{
+  background-color: turquoise;
+  width: 16px;
+  height: 64px;
+}
+#desktop a{
+  color: black;
+}
+/* banner keep practicing */
+@media only screen and (max-width: 480px){
+  #emptygrey{height: 180px;
+    width: auto;
+    background-color: grey;
+    margin-bottom: 0px;
+  }
+.bannerpic{display: none;}
+.learn h1{display: none;}
+.learn p{display: none;}
+.learn span{display: none;}
+#darkgrey{width: 100%;
+  background-color: darkgrey;
+  height: 180px;}
+#darkgrey  h1{
+  color: #2f3133;
+  font-size: 50px;
+  margin: 0px 0px 32px 16px;}
+#darkgrey p{
+  color: #2f3133;
+  font-size: 25px;
+  margin: 0px 0px 24px 16px;}
+  #darkgrey a{
+    color: white;
+  }
+#darkgrey span p{
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #2f3133;
+  margin: 0px 16px 32px 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;}
+}
+@media only screen and (min-width: 480px){
+  #emptygrey{display: none;}
+  #darkgrey{display: none;}
+}
+#darkgrey{
+  width: 100%;
+  background-color: darkgrey;
+  height: 180px;
+}
+#container1{
+  display: flex;
+  width: 100%;
+  background-color: darkgrey;
+}
+.bannerpic{
+  margin: 32px 0px 32px 24px;
+  width: 60%;
+}
+.bannerpic img{
+  width: 100%;
+  height: auto;
+}
+.learn{
+  width: 40%;
+  margin-left: 40px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+}
+.learn span p{
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #2f3133;
+  margin: 0px 200px 0px 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.learn a{
+  color: white;
+}
+.learn p{
+  color: #2f3133;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+h1{
+  color: #2f3133;
+  margin-bottom: 20px;
+  font-size: 90px;
+  margin-right: : 200px;
+}
+/* content with orientation, campus, guest */
+@media only screen and (max-width: 480px){
+#container2{display: none;}
+.practicepic img{display: none;}
+.practiceheader h3{display: none;}
+.practicecontent p{display: none;}
+.columnpics img{display: none;}
+.columnpics1 img{display: none;}
+.columnpics2 img{display: none;}
+.campus h4{display: none;}
+.campus p{display: none;}
+.guest h4{display: none;}
+.guest p{display: none;}
+.orientation h4{display: none;}
+.orientation p{display: none;}
+#ocg .orientation h4{
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 32px;
+  font-size: 20px;}
+#ocg .columnpics1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;}
+#ocg .columnpics1 img{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;}
+#ocg .orientation p{
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  margin-left: 32px;}
+#ocg .orientation span p{
+  margin-bottom: 16px;}
+#ocg .campus h4{
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 32px;
+  font-size: 20px;}
+#ocg .columnpics2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;}
+#ocg .columnpics2 img{
+  width: 90%;
+  display: flex;}
+#ocg .campus p{
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  margin-left: 32px;}
+#ocg .campus span p{
+  margin-bottom: 16px;}
+#ocg .guest h4{
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 32px;
+  font-size: 20px;}
+#ocg .columnpics{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;}
+#ocg .columnpics img{
+  width: 90%;
+  display: flex;}
+#ocg .guest p{
+  display: block;
+  font-size: 16px;
+  width: auto;
+  margin-left: 32px;}
+#ocg .guest span p{
+  margin-bottom: 16px;}
+}
+@media only screen and (min-width: 480px){
+#container2 #ocg{
+  display: none;}
+}
+#container2{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.practicepic{
+  margin: 32px 0px 32px 24px;
+  width: 60%;
+}
+.practicepic img{
+  width: 100%;
+  height: auto;
+}
+.practiceheader{
+  width: 60%;
+  font-size: 70px;
+}
+.practiceheader h3{
+  color: #2f3133;
+  margin: 32px 0px 24px 24px;
+}
+.practicecontent{
+  margin-left: 24px;
+  width: 60%;
+  font-size: 30px;
+  color: #2f3133;
+}
+.orientation h4{
+  color: #2f3133;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.orientation p{
+  color: #2f3133;
+  font-size: 25px;
+}
+.orientation span p{
+  color: blue;
+}
+.campus h4{
+  color: #2f3133;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.campus p{
+  color: #2f3133;
+  font-size: 25px;
+}
+.campus span p{
+  color: blue;
+}
+.guest h4{
+  color: #2f3133;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.guest p{
+  color: #2f3133;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+.guest span p{
+  color: blue;
+}
+.columnpics a{
+  color: blue;
+}
+.columnpics1 a{
+  color: blue;
+}
+.columnpics2 a{
+  color: blue;
+}
+.columnpics1{
+  border-left: 1px solid darkgrey;
+  width: 38.5%;
+  display: flex;
+  flex-direction: row;
+}
+.columnpics2{
+  border-left: 1px solid darkgrey;
+  width: 38.5%;
+  display: flex;
+  flex-direction: row;
+}
+.columnpics1 img{
+  padding: 32px 16px 16px 16px;
+  width: 35%;
+  height: 35%;
+}
+.columnpics{
+  border-left: 1px solid darkgrey;
+  width: 38.5%;
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+}
+.columnpics img{
+  padding: 16px;
+  width: 35%;
+  height: 35%;
+}
+.columnpics2 img{
+  padding: 16px;
+  width: 35%;
+  height: 35%;
+}
+.columnpics1 .orientation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.columnpics2 .campus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.columnpics .guest{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* content start learning */
+@media only screen and (max-width: 480px){
+#start h2{
+  color: #2f3133;
+  text-align: center;
+  background-color: white;
+  font-size: 50px;
+  padding-bottom: 16px;
+}
+#pix img{display: none;}
+#pix p{display: none;}
+#pix h4{
+  margin-right: 16px;
+  margin-left: 16px;
+  color: #2f3133;
+  font-size: 30px;
+  padding: 16px;
+  display: block;
+  background-color: darkgrey;
+  border-bottom: 8px solid white;}
+}
+@media only screen and (min-width: 480px){
+.learncontainer{
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+  }
+.learnheader h2{
+  padding-top: 32px;
+  font-size: 70px;
+  background-color: darkgrey;
+  color: #2f3133;
+  display: block;
+  text-align: center;
+}
+.pic{
+  border-top: 32px solid darkgrey;
+  padding-bottom: 24px;
+  margin-right: 32px;
+}
+.pic p{
+  color: #2f3133;
+  font-size: 25px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  background-color: white;
+}
+.pic h4{
+  color: #2f3133;
+  font-size: 40px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  background-color: white;
+}}
+/* thesis container */
+@media only screen and (max-width: 480px){
+#thesis h1{font-size: 50px;}
+#vidz p{display: none;}
+#vidz h3{display: none;}
+#vidz .bullshitcontainer1{display: none;}
+#vidz .bullshitcontainer2{display: none;}
+#vidz .vidcontent{display: none;}
+#vidz .fisma{display: none;}
+#vidz .now{display: none;}
+.vidcontainer{display: none;}
+#vidz .vid
+  {width: 90%;}
+  {margin: 0 auto;}
+}
+.thesistitle{
+  color: #2f3133;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.vid{
+  margin: 0px 16px 24px 24px;
+  width: 60%;
+}
+video{
+  width: 100%;
+}
+.vidcontent{
+  margin-left: 24px;
+  color: #2f3133;
+  font-size: 25px;
+  width: 60%;
+}
+.vidcontent h3{
+  color: #2f3133;
+  font-size: 40px;
+}
+.vidcontainer{
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.bullshitcontainer1{
+  background-color: darkgrey;
+  width: 38%;
+  display: flex;
+  flex-direction: row;
+}
+.bullshitcontainer1 img{
+  width: 35%;
+  height: 35%;
+  margin: 16px;
+}
+.fisma h3{
+  color: #2f3133;
+  font-size: 40px;
+}
+.fisma p{
+  color: #2f3133;
+  font-size: 25px;
+}
+.bullshitcontainer1 .fisma{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bullshitcontainer2{
+  width: 38%;
+  display: flex;
+  flex-direction: row;
+}
+.bullshitcontainer2 img{
+  width: 35%;
+  height: 35%;
+  margin: 16px;
+}
+.now h3{
+  color: #2f3133;
+  font-size: 40px;
+}
+.now p{
+  color: #2f3133;
+  font-size: 25px;
+}
+.bullshitcontainer2 .now{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* footer */
+@media only screen and (max-width: 480px){
+#copyright p{display: none;}
+#footy{font-size: 1rem;}
+}
+.greyline{
+  border-top: 1px solid darkgrey;
+  margin: 32px 5px 24px 5px;
+}
+footer{
+  display: flex;
+  font-size: 25px;
+  color: #2f3133;
+  margin-left: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid darkgrey;
+}
+footer .term{
+  margin-right: 24px;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
